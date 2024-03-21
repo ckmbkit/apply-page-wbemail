@@ -1,0 +1,470 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-flow: column;
+}
+
+.glesson{
+    width: 150px; 
+    height: auto; 
+    top: 15px;
+    left: 0.45px;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  padding: 0px 112px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.btn-exit{
+  width: 110px;
+  height: 40px;
+  top: 27px;
+  left: 1121px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 50px;
+  border: 2px solid #548BAB;
+  background-color: white;
+  color: #548BAB;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.btn-exit:hover {
+  background-color: #548BAB;
+  color: white;
+}
+
+
+.btn-exit:active {
+  background-color: #0E6EB8;
+  border-color: #0E6EB8;
+}
+/* footer */
+.bott {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bott1 {
+  margin-right: auto;
+  width: auto;
+  height: 50px;
+  margin-left: 50px;
+}
+
+.bott2 {
+  margin-left: auto;
+  margin-right: 50px ;
+}
+/* -------job listing-------- */
+
+.job-listing {
+  width: 100%;
+  max-width: 497px;
+  height: 89vh; 
+  margin: 2px 0 0;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background-color: #fff;
+  overflow-y: scroll; /* Enable vertical scrolling */
+
+  /* WebKit */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+  }
+}
+.underline {
+  border: none;
+  border-top: 1px solid #EDF2F9; /* Color of the line */
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 1000%; /* Adjust as needed */
+}
+
+.job-title {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.location {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  line-height: 21px;
+  color: #595959;
+}
+
+.salary {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  line-height: 21px;
+  color: #595959;
+}
+
+.job-details {
+  margin-bottom: 20px;
+}
+
+.job-details ul {
+  padding-inline-start: 20px; /* Adjust this value as needed */
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.subheading {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 21px;
+  font-family: 'Open Sans', Times, serif;
+}
+
+.subheading_par {
+  font-size: 14px;
+  /* margin-top: 30px; */
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: 'Inter', Times, serif;
+}
+/* ---------job application------------- */
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Align items at the start and end */
+}
+
+.rContainer {
+  width: 100%;
+  position: relative;
+  margin-right: auto;
+  padding: 40px;
+  margin-left: 5px;
+}
+
+.back {
+  text-decoration: none;
+  font-family: 'Cerebri Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35.56px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #12263F;
+  margin-left: 2.5vh;
+}
+
+.steps {
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #aeaeae;
+  border-bottom: 3px solid #C9DFEE;
+  padding-bottom: 5px;
+}
+
+.back_steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* apply */
+.apply-section {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.apply-section h4 {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  color: #12263F;
+}
+
+
+.apply-section p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: black;
+  margin-top: 10px;
+}
+
+/* social media */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+.custom-button {
+  width: 192.61px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 0px; 
+  position: relative; /* Ensure relative positioning */
+}
+
+.custom-button:hover {
+  border-color: #548BAB;
+}
+
+.seek-image {
+  max-width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 45%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.linked-image{
+  max-width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.fb-image{
+  max-width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 45%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.google-image{
+  max-width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 45%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.custom-button h4 {
+  font-family: 'Cerebri Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19.05px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #283E59;
+  margin-top: 5px;
+  z-index: 0;
+}
+
+.underline2 {
+  border: none;
+  border-top: 1px solid #E5E6E2; /* Color of the line */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 895px;
+  margin-left: 3vh;
+}
+
+/*  or */
+.heading-wrapper {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.custom-heading {
+  /* Apply the provided styles for the h4 element here */
+  font-family:  'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  margin-left: 2vh;
+  color: #12263F;
+}
+
+/*email */
+.input-container {
+  display: flex;
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+.input-wrapper {
+  flex: 1;
+}
+
+.input-wrapper label {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  font-family: 'Montserrat'; /* Font family */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Font weight */
+  line-height: 24px; /* Line height */
+  text-align: left; /* Text alignment */
+  color: #AEAEAA; /* Text color */
+}
+
+.text-field {
+  width: 400px;
+  height: 40px;
+  margin-left: 25px;
+  gap: 0px;
+  border-radius: 16px;
+  border: 1px solid #CCCCCC; /* Adjust border color and style */
+  padding: 5px 10px; /* Adjust padding */
+}
+.button-right {
+  width: 165px;
+  height: 29px;
+  top: 324px; 
+  left: 200px; 
+  padding: 4px 10px; 
+  gap: 10px;
+  border-radius: 25px;
+  background: #0ACF83;
+  color: white; 
+  border: none; 
+  font-family: 'Montserrat'; 
+  font-size: 12px; 
+  font-weight: 600; 
+  line-height: 21px; 
+  text-align: center; 
+  margin-left: 110px;
+  margin-bottom: 1vh;
+}
+.input-wrapper2 {
+  flex: 1;
+}
+.input-wrapper2 label {
+  font-family: Montserrat; /* Font family */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Font weight */
+  line-height: 24px; /* Line height */
+  text-align: left; /* Text alignment */
+  color: black; /* Text color */
+}
+
+.forgot-password {
+  color: #548BAB;
+  margin-left: 178px;
+}
+.password-input{
+    width: 440px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 16px;
+    border: 1px solid #CCCCCC; /* Adjust border color and style */
+    padding: 5px 10px;  
+    margin-top: 10px;
+}
+
+/* button */
+.two-button{
+  width: Hug (338px)px;
+  height: Hug (40px)px;
+  margin-top: 40px;
+  gap: 10px;
+  opacity: 0px;
+  margin-left: 25px;
+}
+.continue, .guest{
+  width: 164px;
+  height: 40px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid  #548BAB;
+  color: #548BAB;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.two-button button {
+  margin: 0 5px; /* Adjust the gap as needed */
+}
+.guest:hover {
+  background-color: #548BAB;
+  color: white;
+}
+.guest:active {
+  background-color: #0E6EB8;
+  border-color: #0E6EB8;
+}
+.continue:hover {
+  background-color: #548BAB;
+  color: white;
+}
+.continue:active {
+  background-color: #0E6EB8;
+  border-color: #0E6EB8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
